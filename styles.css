@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: amaranth, arial, helvetica, sans-serif;
+}
+body {
+  background-image: url("background-img.svg");
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.mid-box {
+  width: 430px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.mid-box h1 {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-family: ProximaNova, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif, Helvetica, Arial, Segoe UI Emoji,
+    Segoe UI Symbol, Apple Color Emoji, Twemoji Mozilla, Noto Color Emoji,
+    EmojiOne Color, Android Emoji;
+}
+.mid-box .content {
+  margin: 25px 25px 35px;
+}
+img {
+  width: 70%;
+}
+.logo {
+  text-align: center;
+  margin-top: 15px;
+}
+.content .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs input {
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #c76058;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #b5b5b5;
+}
+.typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+.inputs input:first-child {
+  margin-left: 0px;
+}
+.content .details {
+  margin: 20px 0 25px;
+}
+.details p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.content .reset-btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: rgb(225, 103, 87);
+  transition: all 0.3s ease;
+}
+.content .reset-btn:hover {
+  background: #c76058;
+}
+
+@media screen and (max-width: 460px) {
+  .mid-box {
+    width: 100%;
+  }
+  .mid-box h1 {
+    font-size: 22px;
+    padding: 16px 20px;
+  }
+  .mid-box .content {
+    margin: 25px 20px 35px;
+  }
+  .inputs input {
+    height: 51px;
+    width: 50px;
+    margin: 3px;
+    font-size: 22px;
+  }
+  .details p {
+    font-size: 17px;
+  }
+  .content .reset-btn {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
